@@ -26,26 +26,6 @@ class USPS:
     def search(self, company_name, address, city, state, zip_code):
         result = False
         try:
-            cookies = {
-                'TLTSID': '5c00c9943815161e9a0800e0ed96ae55',
-                'NSC_uppmt-usvf-ofx': 'ffffffff3b22378d45525d5f4f58455e445a4a4212d3',
-                '_gcl_au': '1.1.366595644.1645085608',
-                'mab_usps': '11',
-                '_ga_3NXP3C8S9V': 'GS1.1.1645125024.2.1.1645125566.0',
-                '_ga': 'GA1.2.135497153.1645085609',
-                '_gid': 'GA1.2.69167682.1645085609',
-                '_rdt_uuid': '1645085609518.0d33f9d1-6c3c-48e2-9a96-b0e78f7e23f7',
-                '_scid': '8cdd7cc5-9d42-4649-bb2f-00a4642b999a',
-                '_pin_unauth': 'dWlkPU5UZzBOMkU1TkRZdE5XUTVZeTAwWlRnMExXRm1ORFl0WVRRMFpHRTJORFZrWlRGaA',
-                '_fbp': 'fb.1.1645085611223.676180434',
-                'mdLogger': 'false',
-                'kampyleUserSession': '1645125024903',
-                'kampyleSessionPageCounter': '1',
-                'kampyleUserSessionsCount': '3',
-                '_sctr': '1|1645048800000',
-                '_uetsid': '7d7811808fc911ec9941ab42bf83dd93',
-                '_uetvid': '7d7821208fc911ec808c7d01b301554b',
-            }
             if company_name and address and  city and  state and  zip_code:
                 data = {
                     'companyName': str(company_name),
