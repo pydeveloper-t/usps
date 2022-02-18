@@ -12,7 +12,7 @@ class USPS:
             'Accept-Language': 'en-US,en;q=0.5',
             'Accept-Encoding': 'gzip, deflate, br',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'X-Requested-With': 'XMLHttpRequest',
+            'X-Requested-With': 'XMLHttpRequest',
             'Origin': USPS.BASE_URL,
             'Connection': 'keep-alive',
             'Referer': f'{USPS.BASE_URL}/zip-code-lookup.htm?byaddress',
